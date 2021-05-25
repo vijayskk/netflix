@@ -8,7 +8,7 @@ function Banner() {
             
 
                 <div >
-                    <img src="banner.jpg" alt="" className="w-screen"/>
+                    <img loading="lazy" src="banner.jpg" alt="" className="w-screen"/>
                     
                 </div>
 
