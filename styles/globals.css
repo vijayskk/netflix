@@ -1,16 +1,27 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: black;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.posters{
+    display: flex;
+    padding: 30px;
+    overflow: scroll;
+}
+.item{
+    max-height: 250px;
+    margin-right: 20px;
 }
 
-* {
-  box-sizing: border-box;
+@media only screen and (max-device-width: 1366px) {
+    .item {
+      max-width: 150px;
+    }
+  }
+
+::-webkit-scrollbar{
+    display: none;
 }
