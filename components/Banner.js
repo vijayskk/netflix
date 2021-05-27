@@ -2,13 +2,14 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 
 
-function Banner() {
+function Banner({movies}) {
+    let path = "https://images.tmdb.org/t/p/original" + movies[0].backdrop_path
     return (
         <div className="md:-mt-24 -mt-10">
             
 
                 <div >
-                    <img loading="lazy" src="banner.jpg" alt="" className="w-screen"/>
+                    <img loading="lazy" src={path} alt="" className="w-screen"/>
                     
                 </div>
 

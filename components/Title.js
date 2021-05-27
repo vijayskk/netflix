@@ -17,8 +17,9 @@ function Title() {
                 <img className="item" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/6kbAMLteGO8yyewYau6bJ683sw7.jpg" alt="" />
 
             </div>
-        </div>
+        </div> 
     )
 }
 
 export default Title
+ 

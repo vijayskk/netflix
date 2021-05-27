@@ -5,7 +5,7 @@ import Header from '../components/Header'
 import Title from '../components/Title'
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+export default function Home({movies}) {
   return (
     <div className={styles.container}>
       <Head>
@@ -17,9 +17,21 @@ export default function Home() {
       {/* Header */}
       <Header />
       {/* banner */}
-      <Banner />
-      <Bannertext />
+      <Banner movies={movies}  />
+      <Bannertext movies={movies}/>
       <Title />
     </div>
   )
+}
+
+export async function getServerSideProps(context){
+  const total = await fetch("https://api.themoviedb.org/3/trending/movie/week?api_key=bac63f0b426881aff0bc5d4cb4ed4f72").then(
+    (res)=> res.json()
+  );
+  const movies= total.results;
+  return {
+    props:{
+      movies
+    }
+  }
 }
