@@ -65,3 +65,19 @@ body{
   body::-webkit-scrollbar {
     display: none;
   }
+
+  .descriptiondiv{
+      margin-left: 0px;
+      padding-left: 8px;
+      border-radius: 10px;
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.486); /* Black w/opacity/see-through */
+  }
+
+@media only screen and (max-device-width: 700px) {
+    .descriptiondiv{
+        padding-left: 0px;
+        background-color: rgba(0, 0, 0, 0); /* Fallback color */
+        background-color: rgba(0, 0, 0, 0); /* Black w/opacity/see-through */
+    }
+  } 

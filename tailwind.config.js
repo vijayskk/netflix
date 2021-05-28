@@ -9,7 +9,10 @@ module.exports = {
 
         // Complex site-specific column configuration
        'footer': '200px minmax(900px, 1fr) 100px',
-      }
+      },
+      margin: {
+        '-102': '-34rem',
+       }
     },
   },
   variants: {

@@ -3,7 +3,7 @@ import { Carousel } from 'react-responsive-carousel';
 
 
 function Banner({movies}) {
-    let path = "https://images.tmdb.org/t/p/original" + movies[1].backdrop_path
+    let path = "https://images.tmdb.org/t/p/original" + movies[0].backdrop_path
     return (
         <div className="md:-mt-24 -mt-16">
             

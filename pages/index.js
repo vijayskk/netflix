@@ -29,7 +29,7 @@ export default function Home({movies,action,romance,comedy,drama}) {
 }
 
 export async function getServerSideProps(context){
-  const total = await fetch("https://api.themoviedb.org/3/trending/movie/week?api_key=bac63f0b426881aff0bc5d4cb4ed4f72").then(
+  const total = await fetch("https://api.themoviedb.org/3/trending/movie/day?api_key=bac63f0b426881aff0bc5d4cb4ed4f72").then(
     (res)=> res.json()
   );
   const actiontotal = await fetch("https://api.themoviedb.org/3/discover/movie?api_key=bac63f0b426881aff0bc5d4cb4ed4f72&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=28&with_watch_monetization_types=flatrate").then(
