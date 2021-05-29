@@ -9,7 +9,7 @@ function Banner({movies}) {
             
 
                 <div className="relative">
-                <div className="absolute w-full h-32 bottom-0 bg-gradient-to-t from-black to-transparent z-20" />
+                <div className="absolute w-full h-16 md:h-96 bottom-0 bg-gradient-to-t from-black to-transparent z-20" />
                     <img loading="lazy" src={path} alt="" className="w-screen"/>
                     
                 </div>
